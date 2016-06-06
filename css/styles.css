@@ -1,0 +1,198 @@
+* {
+      margin: 0 auto;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+body{
+  background-color: #F7F7F7;
+}
+
+header{
+  margin-top: 2%;
+  border-top: 2px solid lightgrey;
+}
+
+img{
+  height:250px;
+  width:100%px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border:2px solid #858D8F;
+}
+
+img.headShot {
+  height: 100%;
+  width:80%;
+  border-radius: 100%;
+  display:block;
+}
+
+
+    /* Every row is 90% as wide as it's parent, the <body> */
+    div.row {
+      width: 90%;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    /* clearfix styles to keep the row divs from collapsing,
+      since all their children are floated */
+    div.row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+  footer.row {
+      width: 90%;
+    margin: auto;
+    margin-bottom: 1%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+  footer.row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* this selector selects all divs that have a class name
+      beginning with 'col_' */
+    div[class^='col_']  {
+      float: left;
+      background-color: #99FFCC;
+      
+    }
+
+    div.col_1_of_3 {
+      width: 33.3333333333%;
+      background-color: #A0B5B8;
+      margin-top: 2%;
+
+}
+
+div.col_1_of_1 {width: 100%;}
+    div.col_1_of_2 {width: 50%;}
+    div.col_1_of_4 {width: 25%;}
+    div.col_3_of_4 {width: 75%;}
+    div.col_1_of_5 {width: 20%;}
+    div.col_1_of_8 {width: 12.5%;}
+    div.col_1_of_48{width: 2.083333333333333%;}
+    div.col_1_of_16 {
+      width: 6.25%;
+      background-color: #F7F7F7;}
+    div.col_7_of_8{
+      width: 87.5%;
+      background-color: #F7F7F7;
+    }
+div.col_1_of_1.PicSlider{
+  font-family: cursive;
+  text-align: center;
+  font-size: 3em;
+  display: inline-block;
+  height: 300px;
+}
+
+nav{
+  margin-top: 1%;
+  width:100%;
+  display:inline-block;
+}
+
+ul{
+  padding-top: .5em;
+  padding-bottom: .5em;
+  text-align: center;
+  background-color: #E8E8E8;
+  border-bottom: 1px solid lightgrey;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%
+}
+
+li{
+  margin: 0 auto;
+  display: inline-block;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted #001D26;
+  color: #001D26;
+  	font-family: 'Helvetica Neue';
+	font-size: 1.1em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 26px;
+    //*text-decoration-line: underline 1px solid #2E2E2E ;*//
+}
+
+h1{
+  font-family:'Lora';
+  font-weight: 700;
+  font-style: italic;
+  margin-left: 2%;
+  color: #00394D;
+}
+
+h2.headerInfo{
+  text-align: center;
+  color: #2E2E2E;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  
+}
+
+div.row.featuredProperties{
+  border-bottom: 2px solid lightgrey;
+  margin-bottom: 2%;
+}
+
+div.row.articles{
+  background-color: antiquewhite;
+  margin-bottom: 10%;
+}
+
+.col_1_of_4.SingleFeaturedArticle{
+  height:200px;
+}
+
+div.footerStuff{
+  height:150px;
+  background-color: lightgrey;
+}
+
+//*.rowOfFigures{
+  height:100%;
+  width:96%;
+  margin-left:2%;
+  margin-right: 2%;
+  object-position: center;*//
+
+//*figure{
+  float:left;
+  margin:auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-top:5%;
+}*//
+
+
+.clear{
+  clear:left;
+}
