@@ -1,0 +1,24 @@
+#photoViwer{
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+#photoViwer.is-loading:after{
+  content: url(images/InternetSlowdown_Day.gif);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#photoViwer img{
+  position:absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+}
+
+a.active{
+  opacity: 0.3;
+}

@@ -1,0 +1,41 @@
+/********** SLIDER **********/
+.slider {
+  position: relative;
+  margin-top: 5%
+  }
+
+.slide-viewer {
+    position: relative; /* needed for IE7 */
+    overflow: hidden;
+    height: 430px;}
+
+.slide-group {
+    width: 80%;
+    height: 100%;
+    position: relative;}
+
+.slide {
+    overflow: hidden;
+    width: 80%;
+    height:100%;
+    display: none;
+    position: absolute;}
+
+.slide:first-child {
+    display: block;}
+
+
+/********** BUTTONS **********/
+.slide-buttons {
+  text-align: center;}
+
+.slide-btn {
+  border: none;
+  background: none;
+  color: #000;
+  font-size: 200%;
+  line-height: 0.5em;}
+
+.slide-btn.active, .slide-btn:hover {
+  color: #ed8e6c;
+  cursor: pointer;}
