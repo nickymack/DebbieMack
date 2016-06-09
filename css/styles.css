@@ -13,6 +13,33 @@ header{
   border-top: 2px solid lightgrey;
 }
 
+/*h1{*/
+/*  font-family: 'Jacques Francois', serif;*/
+/*  font-weight: 400;*/
+/*}*/
+
+#featuredListingsRow{
+  margin-top: 5%;
+}
+
+#featuredListings{
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#FeaturedArticleHeader{
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2%;
+  border-top: 2px solid lightgrey;
+}
+a.btn.btn-default{
+  float:right;
+  text-transform: lowercase;
+  font-family: 'Roboto', sans-serif;
+}
 img{
   height:250px;
   width:100%px;
@@ -26,9 +53,11 @@ img{
 }
 
 img.sliderImage{
+  position: relative;
   margin-bottom:1%;
   height:100%;
-  width:80%
+  width:80%;
+  max-height:100%;
 }
 
 img.headShot {
@@ -37,7 +66,6 @@ img.headShot {
   border-radius: 100%;
   display:block;
 }
-
 
     /* Every row is 90% as wide as it's parent, the <body> */
     div.row {
@@ -75,14 +103,12 @@ img.headShot {
     /* this selector selects all divs that have a class name
       beginning with 'col_' */
     div[class^='col_']  {
-      float: left;
-      background-color: #99FFCC;
-      
+      float: left;      
     }
 
     div.col_1_of_3 {
       width: 33.3333333333%;
-      background-color: #A0B5B8;
+      background-color: #cdc8c2;
       margin-top: 2%;
 
 }
@@ -91,11 +117,20 @@ div.col_1_of_1 {
   width: 100%;
   background-color:#cdc8c2 }
     div.col_1_of_2 {width: 50%;}
-    div.col_1_of_4 {width: 25%;}
+    div.col_1_of_4 {
+      width: 25%;
+      overflow: hidden;
+      padding-left: .5em;
+      padding-right: .5em;
+      border-left: 5px solid lightgrey;}
+
     div.col_3_of_4 {width: 75%;}
     div.col_1_of_5 {width: 20%;}
     div.col_1_of_8 {width: 12.5%;}
-    div.col_1_of_48{width: 2.083333333333333%;}
+    div.col_1_of_48{
+      width: 2.083333333333333%;
+      background-color: #cdc8c2;
+}
     div.col_1_of_16 {
       width: 6.25%;
       background-color: #cdc8c2;}
@@ -105,36 +140,39 @@ div.col_1_of_1 {
     }
 
 div.col_1_of_1.picSlider{
-  z-index: 1;
-  position:absolute;
-  text-align: center;
-  font-size: 3em;
+    width: 90%;
+    display: inline-block;
+    position: relative;
+}
+
+.window_slider{
+  position: relative;
   display: inline-block;
-  height: 70%;
-  background-color: #cdc8c2;
+/*  background-color: red;*/
 }
 
 img.top{
   position: absolute;
   display: inline-block;
-  z-index: 99;
+  z-index: 97;
   width:100%;
   height:80%;
-
 }
 
+div.row.articles{
+  margin-top: 10%;
+}
 
-nav{
-  margin-top: 1%;
-  width:100%;
-  display:inline-block;
+div nav{
+  display: block;
+  width:90%;
 }
 
 ul{
   padding-top: .5em;
   padding-bottom: .5em;
   text-align: center;
-  background-color: #E8E8E8;
+  background-color: #cdc8c2;
   border-bottom: 1px solid lightgrey;
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%
@@ -161,9 +199,8 @@ a {
 }
 
 h1{
-  font-family:'Lora';
-  font-weight: 700;
-  font-style: italic;
+  font-family:'Roboto', sans-serif;
+  font-weight: 400;
   margin-left: 2%;
   color: #00394D;
   background-color: #cdc8c2;
@@ -172,25 +209,56 @@ h1{
 h2.headerInfo{
   text-align: center;
   background-color: #cdc8c2;
+  text-align: center;
   color: #2E2E2E;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 300;
   font-size: 1.5em;
-  
+  margin-bottom: -1%  
 }
 
+h2.houseTitle{
+  text-align: center;
+  background-color: #cdc8c2;
+  color: #2E2E2E;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-bottom: -1%
+}
+
+.nextHeading{
+  position: absolute;
+  display:block;
+}
 div.row.featuredProperties{
-  border-bottom: 2px solid lightgrey;
+/*  border-bottom: 2px solid lightgrey;*/
   margin-bottom: 2%;
 }
 
+div.col_1_of_3.featuredListingPics{
+  overflow: hidden;
+  height:400px;
+}
+
+img.featuredHomePics
+{width:100%;;
+}
+
+.featuredParagraph{
+  margin-top: 1em;
+}
+a.moreListingsLink{
+  font-size: 1em;
+  font-family:'Open Sans Condensed', sans-serif;
+}
+
 div.row.articles{
-  background-color: antiquewhite;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .col_1_of_4.SingleFeaturedArticle{
-  height:200px;
+  height:100%;
 }
 
 div.footerStuff{

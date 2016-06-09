@@ -1,8 +1,8 @@
 /********** SLIDER **********/
 .slider {
-  position: relative;
-  margin-top: 5%
-  }
+  width:90%;
+  display: inline-block;
+  margin: 0px 5% 30px 5%;}
 
 .slide-viewer {
     position: relative; /* needed for IE7 */
@@ -10,14 +10,13 @@
     height: 430px;}
 
 .slide-group {
-    width: 80%;
+    width: 100%;
     height: 100%;
     position: relative;}
 
 .slide {
-    overflow: hidden;
-    width: 80%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     display: none;
     position: absolute;}
 
@@ -32,10 +31,10 @@
 .slide-btn {
   border: none;
   background: none;
-  color: #000;
+  color: darkgray;
   font-size: 200%;
   line-height: 0.5em;}
 
 .slide-btn.active, .slide-btn:hover {
-  color: #ed8e6c;
+  color: beige;
   cursor: pointer;}
